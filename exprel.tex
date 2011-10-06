@@ -1,5 +1,7 @@
 \documentclass[11pt,article,oneside]{memoir}
-\usepackage{apc-memoir}
+\input{vc}
+\usepackage[wip]{apc-memoir}
+\bibliography{apcmaster}
 
 \chapterstyle{article-5}
 \pagestyle{apcgit}
@@ -9,8 +11,9 @@
 \myaffiliation{}
 \myemail{}
 \version{1.0}
+\gitstamp
 
-\published{Partial working draft}
+\published{Partial working draft. Please do not circulate.}
 
 \begin{document}
 \maketitle
@@ -19,19 +22,71 @@
 
 \section{Introduction}
 
+Suppose you're an antirealist about a certain domain of discourse---for example, normative discourse. You think that normative discourse is not on a par with descriptive discourse: normative claims don't report facts and they re not true or false, at least not in the same way as descriptive claims. How can you capture this in a general view of normative language?
+
+Here is a first option: expressivism about normative discourse. According to expressivists, normative claims are not truth-apt: the notions of truth and falsity just don't apply to them. Moreover, normative claims don't express beliefs or representational attitudes in general, but rather a kind of conative mental state. Hence, Alejandro's utterance of ``Drowning babies in Coca Cola is okay" is not true or false and doesn't express a belief; rather, it expresses his endorsement of a normative standard, one that allows for the drowning of babies in Coca Cola. 
+
+Here is a second option: truth relativism about normative discourse. This option involves granting that a notion of truth applies to normative claims. But they are not true or false absolutely; rather, they are only assigned a truth-value relative to an assessor. The very same claim, uttered in a unique determinate context, can be true for some assessors and false for others. Hence Paolo's utterance of  ``Drowning babies in Coca Cola is okay" at the current context---10:50 am on October 4th 2011, Canberra time---might be true for him and false for you.
+
+How different are these two options? At the very least, they seem to diverge on one point: the relativist, but not the expressivist, appeals to a notion of truth. At the same time, expressivism and relativism about a certain domain of discourse share a number of features. In particular, both of them are hard-pressed to produce a non-standard account of communication. The intentions to transmit and acquire true beliefs seem to play a major role in any plausible account of our practice of assertion. Thus expressivists need to explain how we can have a practice of assertion involving claims that are non-truth-apt and attitudes that are non-representational. Similaly, relativists need to explain what is the point of transmitting and acquiring contents that are true at some circumstances and false of others---in particular, contents that might be true at the circumstances of the speaker, and false at the circumstances of the hearer. 
+
+This paper has two goals. First, we focus on expressivism and show how expressivists should give an account of the problem of communication. Second, we argue that just the solution to this problem shows that expressivism and relativism are not distinct theories. More precisely, we argue for one constraint on any form of expressivism: the expressivist needs to have a notion of truth in her semantics; most plausibly, this notion is just the notion of truth used by the relativist. We leave it open whether all forms of truth relativism should be construed as brands of expressivism, though we suggest some considerations favoring this idea in the closing of our paper.
+
+The claim that expressivism needs to appeal to truth might be taken as a major and perhaps fatal objection to it. This is not the spirit in which we make this claim. On the contrary, we regard this paper as a positive contribution towards building a general linguistic framework for antirealism. We don't think it's problematic that expressivism turns out not to be a distinct option. On the contrary, the convergence of different views into a unique framework is a sign of the viability and the strength of the latter. Hence, we hope that expressivists and relativists alike will welcome our conclusions. 
+
+The paper proceeds as follows. In section \ref{setup}, we introduce expressivism and the problem of communication in more detail. In section \ref{account}, we give our account of communication. In section \ref{dragon}, we ruthlessly kill a dragon.
+
 \section{Expressivism and the problem of communication}
 
 \subsection{Expressivism}
 
+\subsection{Expressivism}
+Throughout the paper, we take expressivism about normative discourse as our running example, though we intend our conclusions to apply, at least potentially, to expressivism about any kind of discourse.\footnote{PERHAPS HERE WE SHOULD HAVE SOME DISCLAIMERS/QUALIFICATIONS, ESPECIALLY ABOUT THE EPISTEMIC MODAL CASE.} Our starting point is a minimal conception of this type of expressivism, consisting of a negative and a positive claim: 
+\begin{quote}
+\textbf{Minimal Expressivism}
+\begin{itemize}
+\item[(a)] normative claims are not apt to describing, stating, or reporting facts; 
+\item[(b)] normative claims express a non-cognitive (non-representational) attitude of some sort. 
+\end{itemize}
+\end{quote}
+Of course, this minimal characterization needs to be fleshed out to be turned into a proper theory. One needs to say more about, first, the nature of the non-cognitive attitudes in play and their role in a general philosophy of mind; and second, about the expressivist's semantics for normative discourse. 
+
+For present purposes, we assume the norm-expressivism developed by Gibbard in his \citeyearpar{gibbard1992}. The reasons are twofold. First, Gibbard's expressivism has a number of virtues. It is a very general theory of normative discourse; it yields a semantics that is compositional and fully compatible with standard syntactic views; it yields a simple account of logical consequence for normative discourse.\footnote{REFERENCES ON FREGE-GEACH PROBLEM.} Moreover, Gibbard's semantics for normative discourse dovetails well with the framework of communication we are going to use, namely the one developed by \citet{stalnaker1978}. 
+
+Gibbard starts by introducing the attitude of accepting a norm: this is the kind of attitude that determines what individuals regard as mandated, permissible, or forbidden. Your judging that cannibalism is wrong amounts to your accepting a norm that forbids cannibalism; Alejandro's judging that drowning babies in Coca Cola is okay amounts to his accepting a norm that allows for the drowning of babies in Coca Cola. Gibbard doesn't define the notion of accepting a norm: rather, he assumes that this attitude will be part, on a par with beliefs and desires, of a (yet to come) fully developed empirical psychology. In particular, the notion of accepting a norm will play a crucial role in an evolutionary explanation of individuals' coordination in a social context.
+
+How does this affect Gibbard's semantics for normative claims? Gibbard starts from a broadly Stalnakerian (\citeyear{stalnaker1978}) picture of linguistic content. On this picture, to make an assertion is, essentially, to distinguish among alternative possible ways the world might be. Making an assertion is claiming that the world is a certain way, rather than others. Hence, on Stalnaker's picture, the contents of assertions are just sets of possible worlds, i.e.~the worlds that are not ruled out by the assertion. Of course, Gibbard cannot help himself to this picture as it is: for the expressivist, normative claims don't distinguish among possible ways the world might be. Gibbard's move is to introduce a new kind of possibilities in the Stalnaker framework. Descriptive claims distinguish among possible worlds; normative claims distinguish among fully specified normative standards, or, as Gibbard calls them, \emph{systems of norms}. Hence the contents of 
+
+\ex. Paolo drowns babies in Coca Cola.
+
+\ex. Drowning babies in Coca Cola is okay.
+
+are given by, respectively:
+
+\ex.[] $\lbrace$$w$: Paolo drowns babies in Coca Cola in $w$$\rbrace$
+
+\ex.[] $\lbrace$$n$: $n$ allows drowning babies in Coca Cola$\rbrace$
+
+For several reasons, in the formalism it's useful to treat all clauses as having contents of the same kind. Gibbard can easily do this: he takes all contents to be, formally, sets of world-norm pairs. Descriptive claims impose constraints only on the world component. Normative claims impose constraints only on the norm component. Hence, from a formal standpoint, the contents of the two claims above turn out to be:
+
+\ex.[] $\lbrace$$\langle w, n \rangle$: Paolo drowns babies in Coca Cola in $w$$\rbrace$
+
+\ex.[] $\lbrace$$\langle w, n \rangle$: $n$ allows drowning babies in Coca Cola$\rbrace$
+
+
 \subsection{Standard accounts of communication}
 
-We will think of conversations as taking place against a background body of information. For our purposes, we can think of this body of information---the \emph{context set}---as representing what is mutually recognized as being taken for granted for the purposes of the conversation. The purpose of an assertion, on this picture, is to add information to the context set. 
+We will think of conversations as taking place against a background body of information. For our purposes, we can think of this body of information---the \emph{context set}---as representing what is mutually recognized as being taken for granted for the purposes of the conversation. The purpose of an assertion, on this picture, is to add information to the context set.\footnote{This picture is due, in its essentials, to Stalnaker. See  e.g. \citealt{stalnaker1973,stalnaker1978}. See also \citealt{lewis1979a}.}
 
-For concreteness, we make a few working assumptions. First, we will think of a body of information as represented by a set of \emph{possible worlds}: the worlds that are not ruled out by that body of information. Second, we think of the content of a declarative sentence as (determining) a set of possible worlds: those worlds in which the sentence is true. 
+For concreteness, we make a few working assumptions. First, we will think of a body of information as represented by a set of \emph{possible worlds}: the worlds that are not ruled out by that body of information. Second, we think of the \emph{content} of a declarative sentence as (determining) a set of possible worlds: those worlds in which the sentence is true. 
 
-On this picture, communication can be thought of as a matter of coordination on a body of information. 
+As the conversation evolves, so does the context set. After a successful utterance of a sentence $s$, the content of $s$ gets added to the context set---the context set is shrunk to exclude those in which $s$ is false.\footnote{And some more: the context set will, in general, get updated so that every world in it is one in which an utterance took place, and so on. This need not be the case: if participants are engaged in pretense, describing a situation in which their conversation is not taking place, information about the conversation will not get added to the context set. For our purposes, we can engage in the pretense that such conversations never take place.} 
+
+One advantage of this way of modeling communication is that it allows us to make sense of the practice of conversation---it allows for a simple explanation of \emph{why} communication happens the way it does. There is a convention in place so that (\emph{i}) when I utter a sentence $s$, I thereby convey that I believe the content of $s$---what $s$ says; (\emph{ii}) if you take me to be reliable on the subject matter at hand, you will take my believing that $s$ is true as a reason for you to believe that $s$ is true.\footnote{Cf. the `convention of truthfulness and trust' in \citealt{lewis1975}.}
+
+On this picture, communication can be thought of as a matter of coordination on a body of information.  
 
 \subsection{Putting things together}
 
-
+\printbibliography
 \end{document}

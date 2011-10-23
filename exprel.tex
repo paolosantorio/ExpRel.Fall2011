@@ -15,6 +15,8 @@
 
 \published{Partial working draft. Please do not circulate.}
 
+\newcommand{\ought}{\largesquare}
+
 \begin{document}
 \maketitle
 	
@@ -113,9 +115,23 @@ Although no alternative account has been given in full detail, expressivists hav
 
 To a first approximation, this seems like a good strategy for making sense of our communicative practices. The point of engaging in conversation about non-normative matters is to coordinate on a body of beliefs. The point of engaging in conversation about normative matters is to coordinate on a system of norms. We work out, as a community, what to think about the world. We work out, as a community, what system of norms to accept. Communication can be understood as a way to foster such coordination. 
 
-Unfortunately, to account for \emph{our} communicative practices, coordination by itself will not do. The reason is that coordination is too cheap. If our goal in conversation is to coordinate on one of two systems of norms, flipping a coin should do just fine. But we don't normally rely on coin flips when working out what to do, no more so than we rely on coin flips when working out what the world is like. 
+Here is Allan Gibbard, explicitly making this point: 
 
-This is not to say that coordination cannot play a part in a general account of communication, one that makes sense of both normative and non-normative discourse. But a full account must do more than point out the advantages of coordination, and the ways in which conversation can foster coordination. For there are much more efficient ways of achieving coordination, so a desire for coordination on our beliefs or our normative acceptances cannot explain the complexities of our communicative practices. 
+\begin{small}
+\begin{quote}
+	The biological function of the mechanisms underlying our normative capacities is to coordinate. Hence the psychic mechanisms that produce normative judgments are not systems of natural representations, they are coordinating systems. Their biological function is not to put something in the head in correspondence with their subject matter; it is to coordinate what is in one person's head with what is in another's. \cite[p. 110]{gibbard1990}
+\end{quote}
+\end{small}
+And Seth Yalcin, building on Gibbard's strategy to flesh out an account of communication friendly to his expressivist account of epistemic modal talk: 
+\begin{small}
+	\begin{quote}
+[I]n modeling the communicative impact of an epistemic possibility claim, we construe the objective as one of coordination on a certain global property of one’s state of mind—the property of being compatible with a certain proposition—not one of coordination concerning the way the world is. \cite[p. 310]{yalcin2011}
+	\end{quote}
+\end{small}
+
+Unfortunately, to account for \emph{our} communicative practices, coordination by itself will not do. The reason is that coordination is too cheap. If our goal in conversation is to coordinate on one of two systems of norms, flipping a coin should do just fine.  Mere coordination is what we are after when deciding what side on the road to drive on: there, a coin flip would have done the trick. There, what we want is that we all drive on the same side of the road, regardless of \emph{which} side that is. But we don't normally rely on coin flips when working out what to do, no more so than we rely on coin flips when working out what the world is like. 
+
+This is not to say that coordination cannot play a part in a general account of communication, one that makes sense of both normative and non-normative discourse. But a full account must do more than point out the advantages of coordination, and the ways in which conversation can foster coordination. For there are much more efficient ways of achieving coordination, so a desire for coordination on our beliefs or our normative acceptances cannot explain the complexities of our communicative practices. In the next section, we look at the ways in which this idea of communication as coordination needs to be constrained if it is to yield an explanation of why communication works the way it does. 
 
 % TODO 
 %(fold) 
@@ -127,6 +143,59 @@ This is not to say that coordination cannot play a part in a general account of 
 % On this picture, communication can be thought of as a matter of coordination on a body of information.
 
 \section{Constraints on coordination}\label{coc}
+
+In this section, we argue that expressivists are committed to the following claim: 
+
+\ex.[(\textsc{c})] In any `normal' conversation, it is presupposed that there is a (unique) system of norms on which the participants' acceptances ought to converge.
+
+A few remarks are in order. First, \emph{presupposition} here does not require unconditional acceptance. All the expressivist is committed to is that, while the conversation takes place, participants must take for granted \emph{for the purposes of the conversation} that there is a unique system of norms to which the conversation ought to converge. 
+
+Second, (\textsc{c}) does not amount to a capitulation to a form of realism or objectivism. A realist will presumably endorse the following thesis: 
+
+\ex.[(\textsc{c$^*$})] There is a unique system of norms (the `true' system of norms) to which, in any `normal' conversation, participants' acceptances ought to converge. 
+
+But (\textsc{c$^*$}) is crucially distinct from (\textsc{c}), and neither one entails the other. It may be that there is a stronger version of (\textsc{c$^*$}) that realists are also committed to, e.g.
+
+\ex.[] There is a unique system of norms such that, in any `normal' conversation, it is presupposed that the participants' acceptances ought to converge to that system of norms. 
+
+And while this principle does entail (\textsc{c}), it is not entailed by it. 
+
+Third, note that in endorsing (\textsc{c}) the expressivist need not impute ordinary speakers with any type of false belief. In presupposing that there is a unique system of norms to which our acceptances \emph{ought} to accept I am not, according to the expressivist, taking a stance on what the world is like. So the presupposition in (\textsc{c}) is compatible with a perfectly accurate view on what the world is like. 
+
+Finally, a word on the qualifier `normal': by `normal' conversation (at \emph{t}) we mean one in which it is presupposed (at \emph{t}) that there is a point to communication. In other words, one in which it is presupposed that participants in the conversation intend to achieve coordination.
+
+Our argument for (\textsc{c}) is somewhat complex. Before spelling it out in some detail, we will take a moment to briefly outline the main moves we will make along the way. 
+
+\subsection{Overview of our main argument}
+
+We use `$n$',`$s$', and `$c$' as variables ranging over systems of norms, participants in a conversation, and context sets, respectively. Also, we use `$\mathsf{Acc}_s$' to denote the set of systems of norms compatible with what $s$ accepts, and we use `$\ought$' to abbreviate the \emph{ought} operator. This allows us to introduce some abbreviations. Our conclusion, for example, is just the claim that the following is a presupposition of every `normal' conversation
+
+\ex.[] \textsc{convergence}: $(\exists n)(\forall s) \ought (n \in \mathsf{Acc}_s)$
+
+
+In arguing that \Last must be presupposed in any conversation,\footnote{Henceforth, we drop the qualifier `normal' for the sake of readability.} we rely on two main premises. The first is that the following is presupposed in every conversation with context set $c$:
+
+\ex.[(\textsc{p1})] $\ought ((\exists c' \subset c)(\forall s)\mathsf{Acc}_s \subset c')$.
+
+The second is that 
+
+\ex.[(\textsc{p2})] $(\exists n)(\forall s)\ought(n \in \mathsf{Acc}_s)$
+
+is also presupposed in any conversation. 
+
+In plain English, the first premise is that, in every conversation, it is presupposed that the context set ought to be narrowed down. The second premise is that, in every conversation, it is presupposed that there is a system of norms that ought not be ruled out from any of the participant's acceptance state. 
+
+Unsurprisingly, most of the action will take place in the argument that (\textsc{p2}) is a presupposition in any normal conversation. 
+
+Once we establish that (\textsc{p1}) and (\textsc{p2}) must be presupposed in any conversation, we will have completed the hard work. For, as we will show, every context set that contains \textsc{p1} and \textsc{p2} is a context set that contains \textsc{convergence}. Thus, if (\textsc{p1}) and (\textsc{p2}) are presupposed in every conversation, our conclusion (\textsc{c}) must obtain. 
+
+\subsection{The first premise}
+
+\subsection{The second premise}
+
+\subsection{Deriving the main conclusion}
+
+
 
 \section{Morals}\label{dragon}
 
